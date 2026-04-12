@@ -10,3 +10,6 @@ sentence-transformers
 torch
 streamlit
 requests
+datasets
+ir_datasets
+pyarrow

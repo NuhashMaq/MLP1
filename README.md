@@ -33,6 +33,8 @@ I built a production-minded two-stage search ranking system where BM25 first ret
 - [API Example](#api-example)
 - [Experiment Tracking](#experiment-tracking)
 - [Project Structure](#project-structure)
+- [Large Public Dataset Training](#large-public-dataset-training)
+- [Deployment Recommendation](#deployment-recommendation)
 - [Roadmap](#roadmap)
 
 ## Why This Project
@@ -255,6 +257,8 @@ search-ranking-model/
 │   ├── features.py
 │   ├── train.py
 │   ├── evaluate.py
+│   ├── prepare_msmarco_large.py
+│   ├── train_large.py
 │   ├── analyze.py
 │   ├── ablation.py
 │   ├── experiment_logger.py
@@ -262,6 +266,51 @@ search-ranking-model/
 ├── Dockerfile
 └── requirements.txt
 ```
+
+## Large Public Dataset Training
+
+This project now supports real large-scale public training data using **MS MARCO Passage Train** (8.8M docs, 808K queries).
+
+### 1) Build large LTR pairs from MS MARCO
+
+```bash
+python src/prepare_msmarco_large.py --max-queries 800000 --hard-negatives 30
+```
+
+Output:
+
+- `data/raw/msmarco_ltr_pairs.parquet`
+- `data/raw/msmarco_ltr_stats.json`
+
+### 2) Train large LambdaRank model
+
+```bash
+python src/train_large.py --pairs-path data/raw/msmarco_ltr_pairs.parquet
+```
+
+Output:
+
+- `models/lgbm_ranker_large.pkl`
+- `models/tfidf_vectorizer_large.pkl`
+- `data/processed/train_featured_large.parquet`
+- `data/processed/test_featured_large.parquet`
+
+Note: This is intended for high-storage / high-memory environments due dataset size.
+
+## Deployment Recommendation
+
+**Can you publish on Vercel?**
+
+- Vercel is good for frontend and lightweight serverless functions.
+- For this ML API (large model artifacts, heavier CPU/RAM, longer requests), Vercel is usually not ideal.
+
+Recommended production setup:
+
+- Frontend/UI on Vercel (optional)
+- FastAPI ranking API on one of: Render, Railway, Fly.io, Google Cloud Run, AWS ECS/Fargate
+- Model/data artifacts in object storage (S3/GCS/R2)
+
+If you need a single place, use Cloud Run or Render for the full API service.
 
 ## Roadmap
 
