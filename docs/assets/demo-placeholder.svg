@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .t{font:700 34px 'Segoe UI', Arial, sans-serif; fill:#e2e8f0}
+      .s{font:500 18px 'Segoe UI', Arial, sans-serif; fill:#cbd5e1}
+      .chip{fill:#1d4ed8; rx:14}
+      .chipText{font:600 14px 'Segoe UI', Arial, sans-serif; fill:#dbeafe}
+    </style>
+  </defs>
+  <rect width="1200" height="520" fill="url(#g)"/>
+  <text x="70" y="140" class="t">Demo Preview Placeholder</text>
+  <text x="70" y="182" class="s">Replace this image with a GIF recording of UI interaction</text>
+  <text x="70" y="214" class="s">Flow: Enter query → API call → ranked results</text>
+
+  <rect x="70" y="270" width="210" height="40" class="chip"/>
+  <text x="94" y="296" class="chipText">streamlit run app/ui.py</text>
+
+  <rect x="300" y="270" width="250" height="40" class="chip"/>
+  <text x="324" y="296" class="chipText">uvicorn app.main:app --reload</text>
+</svg>

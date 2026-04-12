@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="360" viewBox="0 0 1300 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <style>
+      .title{font:700 24px 'Segoe UI', Arial, sans-serif; fill:#e2e8f0}
+      .label{font:600 14px 'Segoe UI', Arial, sans-serif; fill:#e2e8f0}
+      .small{font:500 12px 'Segoe UI', Arial, sans-serif; fill:#94a3b8}
+      .box{fill:#1f2937; stroke:#475569; stroke-width:1.4; rx:12}
+      .arrow{stroke:#93c5fd; stroke-width:2; marker-end:url(#m)}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#93c5fd"/>
+    </marker>
+  </defs>
+
+  <rect width="1300" height="360" fill="url(#bg)"/>
+  <text x="34" y="44" class="title">Two-Stage Ranking Architecture (Dark)</text>
+
+  <rect x="34" y="86" width="170" height="88" class="box"/>
+  <text x="58" y="122" class="label">User Query</text>
+  <text x="58" y="143" class="small">e.g. gaming laptop</text>
+
+  <rect x="240" y="86" width="210" height="88" class="box"/>
+  <text x="266" y="122" class="label">FastAPI Layer</text>
+  <text x="266" y="143" class="small">POST /search</text>
+
+  <rect x="486" y="86" width="210" height="88" class="box"/>
+  <text x="518" y="122" class="label">BM25 Retriever</text>
+  <text x="518" y="143" class="small">lexical candidate gen</text>
+
+  <rect x="732" y="86" width="210" height="88" class="box"/>
+  <text x="758" y="122" class="label">Feature Engine</text>
+  <text x="758" y="143" class="small">lexical + semantic</text>
+
+  <rect x="978" y="86" width="250" height="88" class="box"/>
+  <text x="1008" y="122" class="label">LightGBM Reranker</text>
+  <text x="1008" y="143" class="small">LambdaRank scoring</text>
+
+  <line x1="204" y1="130" x2="236" y2="130" class="arrow"/>
+  <line x1="450" y1="130" x2="482" y2="130" class="arrow"/>
+  <line x1="696" y1="130" x2="728" y2="130" class="arrow"/>
+  <line x1="942" y1="130" x2="974" y2="130" class="arrow"/>
+
+  <rect x="420" y="228" width="460" height="92" class="box"/>
+  <text x="452" y="266" class="label">Final Ranked Results</text>
+  <text x="452" y="289" class="small">Top documents sorted by model_score</text>
+
+  <line x1="1102" y1="176" x2="1102" y2="222" class="arrow"/>
+  <line x1="1102" y1="222" x2="880" y2="222" class="arrow"/>
+</svg>
