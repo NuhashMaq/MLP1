@@ -44,8 +44,6 @@ I built a production-minded two-stage search ranking system where BM25 first ret
 
 ## Visual Architecture Gallery
 
-![Architecture light](docs/assets/architecture-light.svg)
-
 ![Architecture dark](docs/assets/architecture-dark.svg)
 
 ## Demo Preview
@@ -61,6 +59,12 @@ Replace this placeholder with a short GIF once you record UI interaction.
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/start-demo.ps1
+```
+
+- Auto-convert recorded MP4 to optimized GIF:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/convert-demo-to-gif.ps1 -InputMp4 docs/assets/demo.mp4 -OutputGif docs/assets/demo.gif
 ```
 
 - After recording, export GIF as `docs/assets/demo.gif` and replace the placeholder path in this README.

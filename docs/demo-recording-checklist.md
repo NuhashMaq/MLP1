@@ -49,7 +49,13 @@ Recommended settings:
 ## 6) Export and Convert to GIF
 
 - Export MP4 first.
-- Convert to GIF with ScreenToGif or ezgif.com (keep under 8-12 MB).
+- Auto-convert with helper script:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/convert-demo-to-gif.ps1 -InputMp4 docs/assets/demo.mp4 -OutputGif docs/assets/demo.gif
+```
+
+- Or convert with ScreenToGif / ezgif.com (keep under 8-12 MB).
 - Save as docs/assets/demo.gif.
 
 ## 7) Replace README Placeholder
