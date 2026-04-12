@@ -24,6 +24,7 @@ I built a production-minded two-stage search ranking system where BM25 first ret
 - [Why This Project](#why-this-project)
 - [Visual Architecture Gallery](#visual-architecture-gallery)
 - [Demo Preview](#demo-preview)
+- [Demo Recording Guide](#demo-recording-guide)
 - [System Architecture](#system-architecture)
 - [Request Lifecycle](#request-lifecycle)
 - [Feature Stack](#feature-stack)
@@ -43,11 +44,7 @@ I built a production-minded two-stage search ranking system where BM25 first ret
 
 ## Visual Architecture Gallery
 
-Light theme view:
-
 ![Architecture light](docs/assets/architecture-light.svg)
-
-Dark theme view:
 
 ![Architecture dark](docs/assets/architecture-dark.svg)
 
@@ -56,6 +53,17 @@ Dark theme view:
 ![Demo preview placeholder](docs/assets/demo-placeholder.svg)
 
 Replace this placeholder with a short GIF once you record UI interaction.
+
+## Demo Recording Guide
+
+- Full checklist: [docs/demo-recording-checklist.md](docs/demo-recording-checklist.md)
+- One-command launcher (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/start-demo.ps1
+```
+
+- After recording, export GIF as `docs/assets/demo.gif` and replace the placeholder path in this README.
 
 ## System Architecture
 
