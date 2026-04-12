@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+lightgbm
+rank_bm25
+fastapi
+uvicorn[standard]
+joblib
+sentence-transformers
+torch
+streamlit
+requests

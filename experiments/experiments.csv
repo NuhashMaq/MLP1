@@ -1,0 +1,3 @@
+experiment_name,features,ndcg@5,mrr,map,notes
+bm25_baseline,bm25_score,0.8170,0.8333,0.7931,First-stage lexical retrieval baseline on held-out queries.
+hybrid_reranker,"query_len,doc_len,overlap_count,overlap_ratio,exact_match,tfidf_cosine_sim,bm25_score,semantic_cosine_sim",0.9905,1.0000,0.9347,Two-stage reranker with lexical and semantic features.

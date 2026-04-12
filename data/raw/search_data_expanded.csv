@@ -1,0 +1,110 @@
+query,doc_id,document,relevance
+ergonomic chair,3,lenovo legion gaming laptop,0
+ergonomic chair,4,hp office laptop for students,0
+ergonomic chair,5,ergonomic office chair with lumbar support,3
+ergonomic chair,6,mesh back adjustable office chair,3
+ergonomic chair,7,executive leather office chair,1
+ergonomic chair,8,wooden dining chair set,0
+ergonomic chair,9,noise cancelling bluetooth earbuds,0
+ergonomic chair,10,true wireless sports earbuds,0
+gaming accessories,1,asus tuf gaming laptop with rtx graphics,1
+gaming accessories,2,acer nitro 5 gaming notebook,1
+gaming accessories,3,lenovo legion gaming laptop,1
+gaming accessories,4,hp office laptop for students,0
+gaming accessories,5,ergonomic office chair with lumbar support,0
+gaming accessories,6,mesh back adjustable office chair,0
+gaming accessories,8,wooden dining chair set,0
+gaming accessories,10,true wireless sports earbuds,0
+gaming accessories,17,wireless gaming mouse,3
+gaming accessories,18,mechanical gaming keyboard,3
+gaming keyboard,1,asus tuf gaming laptop with rtx graphics,0
+gaming keyboard,2,acer nitro 5 gaming notebook,0
+gaming keyboard,3,lenovo legion gaming laptop,0
+gaming keyboard,4,hp office laptop for students,0
+gaming keyboard,17,wireless gaming mouse,1
+gaming keyboard,18,mechanical gaming keyboard,3
+gaming keyboard,20,cotton socks pack,0
+gaming laptop,1,asus tuf gaming laptop with rtx graphics,3
+gaming laptop,2,acer nitro 5 gaming notebook,3
+gaming laptop,3,lenovo legion gaming laptop,3
+gaming laptop,4,hp office laptop for students,1
+gaming laptop,5,ergonomic office chair with lumbar support,0
+gaming laptop,7,executive leather office chair,0
+gaming laptop,9,noise cancelling bluetooth earbuds,0
+gaming laptop,17,wireless gaming mouse,1
+gaming laptop,18,mechanical gaming keyboard,1
+gaming laptop,19,usb c laptop charger,0
+gaming laptop,20,cotton socks pack,0
+laptop charger,1,asus tuf gaming laptop with rtx graphics,1
+laptop charger,2,acer nitro 5 gaming notebook,1
+laptop charger,3,lenovo legion gaming laptop,1
+laptop charger,4,hp office laptop for students,1
+laptop charger,5,ergonomic office chair with lumbar support,0
+laptop charger,6,mesh back adjustable office chair,0
+laptop charger,7,executive leather office chair,0
+laptop charger,11,wireless earbuds with long battery life,0
+laptop charger,16,formal leather office shoes,0
+laptop charger,19,usb c laptop charger,3
+noise cancelling earbuds,1,asus tuf gaming laptop with rtx graphics,0
+noise cancelling earbuds,3,lenovo legion gaming laptop,0
+noise cancelling earbuds,4,hp office laptop for students,0
+noise cancelling earbuds,9,noise cancelling bluetooth earbuds,3
+noise cancelling earbuds,10,true wireless sports earbuds,1
+noise cancelling earbuds,11,wireless earbuds with long battery life,3
+noise cancelling earbuds,12,wired over-ear headphones,1
+noise cancelling earbuds,18,mechanical gaming keyboard,0
+noise cancelling earbuds,19,usb c laptop charger,0
+office chair,1,asus tuf gaming laptop with rtx graphics,0
+office chair,4,hp office laptop for students,0
+office chair,5,ergonomic office chair with lumbar support,3
+office chair,6,mesh back adjustable office chair,3
+office chair,7,executive leather office chair,3
+office chair,8,wooden dining chair set,1
+office chair,10,true wireless sports earbuds,0
+office chair,11,wireless earbuds with long battery life,0
+office chair,16,formal leather office shoes,0
+running shoes,2,acer nitro 5 gaming notebook,0
+running shoes,3,lenovo legion gaming laptop,0
+running shoes,4,hp office laptop for students,0
+running shoes,5,ergonomic office chair with lumbar support,0
+running shoes,12,wired over-ear headphones,0
+running shoes,13,lightweight running shoes for men,3
+running shoes,14,trail running sneakers with extra grip,3
+running shoes,15,cushioned road running shoes,3
+running shoes,16,formal leather office shoes,1
+running shoes,20,cotton socks pack,1
+socks,1,asus tuf gaming laptop with rtx graphics,0
+socks,2,acer nitro 5 gaming notebook,0
+socks,3,lenovo legion gaming laptop,0
+socks,4,hp office laptop for students,0
+socks,13,lightweight running shoes for men,1
+socks,14,trail running sneakers with extra grip,1
+socks,15,cushioned road running shoes,1
+socks,16,formal leather office shoes,0
+socks,20,cotton socks pack,3
+student laptop,1,asus tuf gaming laptop with rtx graphics,1
+student laptop,2,acer nitro 5 gaming notebook,1
+student laptop,3,lenovo legion gaming laptop,0
+student laptop,4,hp office laptop for students,3
+student laptop,5,ergonomic office chair with lumbar support,0
+student laptop,6,mesh back adjustable office chair,0
+student laptop,7,executive leather office chair,0
+student laptop,18,mechanical gaming keyboard,0
+student laptop,19,usb c laptop charger,1
+trail running shoes,3,lenovo legion gaming laptop,0
+trail running shoes,4,hp office laptop for students,0
+trail running shoes,9,noise cancelling bluetooth earbuds,0
+trail running shoes,12,wired over-ear headphones,0
+trail running shoes,13,lightweight running shoes for men,1
+trail running shoes,14,trail running sneakers with extra grip,3
+trail running shoes,15,cushioned road running shoes,1
+trail running shoes,16,formal leather office shoes,0
+wireless earbuds,2,acer nitro 5 gaming notebook,0
+wireless earbuds,3,lenovo legion gaming laptop,0
+wireless earbuds,4,hp office laptop for students,0
+wireless earbuds,9,noise cancelling bluetooth earbuds,3
+wireless earbuds,10,true wireless sports earbuds,3
+wireless earbuds,11,wireless earbuds with long battery life,3
+wireless earbuds,12,wired over-ear headphones,1
+wireless earbuds,17,wireless gaming mouse,0
+wireless earbuds,19,usb c laptop charger,0
