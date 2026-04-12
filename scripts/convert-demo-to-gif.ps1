@@ -25,11 +25,11 @@ if ($outputDir -and -not (Test-Path $outputDir)) {
 $palettePath = Join-Path $env:TEMP "demo_palette.png"
 
 Write-Host "Generating palette..."
-$paletteFilter = "fps=${Fps},scale=${Width}:-1:flags=lanczos,palettegen"
+$paletteFilter = ("fps={0},scale={1}:-1:flags=lanczos,palettegen" -f $Fps, $Width)
 & ffmpeg -y -i $InputMp4 -vf $paletteFilter $palettePath | Out-Null
 
 Write-Host "Encoding GIF..."
-$gifFilter = "fps=${Fps},scale=${Width}:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5"
+$gifFilter = ("fps={0},scale={1}:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=5" -f $Fps, $Width)
 & ffmpeg -y -i $InputMp4 -i $palettePath -lavfi $gifFilter $OutputGif | Out-Null
 
 if (Test-Path $palettePath) {
