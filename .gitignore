@@ -15,6 +15,9 @@ venv/
 models/*.pkl
 models/*.bin
 data/processed/*.csv
+data/large/
+data/processed/*.parquet
+experiments/large_training_report.json
 
 # Notebook checkpoints
 .ipynb_checkpoints/
